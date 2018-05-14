@@ -1,6 +1,9 @@
 package Calendar;
 
-public class TimeHolder {
+/**
+ * TimeHolder holds basic time values for convenience
+ */
+public class TimeHolder extends Holder{
 
     private int ampm; //stores the ampm value at 0 if its am and at 1 if its pm
     private int hour; //stores the hour value of the object
