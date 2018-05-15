@@ -3,7 +3,7 @@ package Calendar;
 /**
  * TimeHolder holds basic time values for convenience
  */
-public class TimeHolder extends Holder{
+public class TimeHolder{
 
     private int ampm; //stores the ampm value at 0 if its am and at 1 if its pm
     private int hour; //stores the hour value of the object
@@ -13,16 +13,12 @@ public class TimeHolder extends Holder{
     /**
      * @return returns the day/night value to be either 0 if day and 1 if night
      */
-    public int getAmpm() {
-        return ampm;
-    }
+    public int getAmpm() { return ampm; }
 
     /**
      * @param ampm becomes this objects new ampm attribute
      */
-    public void setAmpm(int ampm) {
-        this.ampm = ampm;
-    }
+    public void setAmpm(int ampm) { this.ampm = ampm; }
 
     /**
      * @return returns the hour value of the saved time

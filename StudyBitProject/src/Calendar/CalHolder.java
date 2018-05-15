@@ -2,23 +2,28 @@ package Calendar;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+
+/**
+ * CalHolder holds data for dates and descriptions of assignments
+ */
 
 public class CalHolder {
 
-    private ArrayList<DateHolder> dates; //stores multiple DateHolder objects in order to display tests/quizzes/etc that the user has programmed in
+    private HashMap<DateHolder,DescHolder> dates; //stores multiple DateHolder,DescHolder key value pair objects in order to display tests/quizzes/etc that the user has programmed in
 
     /**
      * @return return the current array of DateHolders
      */
-    public ArrayList<DateHolder> getDates() {
+    public HashMap<DateHolder,DescHolder> getDates() {
         return dates;
     }
 
     /**
-     * I would not advise using this function because this array will need to be
-     * @param dates is set to be the new array of the
+     * I would not advise using this function because this Map will need to be dynamically added to
+     * @param dates is set to be the new HashMap of the object
      */
-    public void setDates(ArrayList<DateHolder> dates) {
+    public void setDates(HashMap<DateHolder,DescHolder> dates) {
         this.dates = dates;
     }
 
@@ -32,9 +37,9 @@ public class CalHolder {
     }
 
     /**
-     * @param dates becomes the initial ArrayList for the CalHolder object
+     * @param dates becomes the initial HashMap for the CalHolder object
      */
-    public CalHolder(ArrayList<DateHolder> dates){
+    public CalHolder(HashMap<DateHolder,DescHolder> dates){
 
         this.dates = dates;
 
