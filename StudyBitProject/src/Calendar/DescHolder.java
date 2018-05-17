@@ -7,7 +7,6 @@ package Calendar;
 public class DescHolder {
 
     private String title; //holds the title of the assignment
-
     private String desc; //holds extra description of the assignment
 
     /**
