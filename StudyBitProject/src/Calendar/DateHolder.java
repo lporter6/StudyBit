@@ -74,7 +74,7 @@ public class DateHolder{
     /**
      * @param year is set to be the initial year value of the object
      * @param month is set to be the initial month value of the object
-     * @param day is set to be the initial day value of the object
+     *  @param day is set to be the initial day value of the object
      * @param timeHolder is set to be the initial timeHolder value of the object
      */
     public DateHolder(int year, int month, int day, TimeHolder timeHolder) {
