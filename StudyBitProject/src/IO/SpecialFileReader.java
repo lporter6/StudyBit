@@ -54,6 +54,7 @@ public class SpecialFileReader {
 
             }
 
+
             return returnHash; //if all the above code runs correctly, the program will always return a HashMap
 
 

@@ -22,6 +22,8 @@ import java.util.HashMap;
 
 public class Main extends Application {
 
+    public static final String universalPathName = "log.txt";
+
     public static BorderPane root = new BorderPane(); //root Pane of the Scene
     public static GridPane center = new GridPane(); //center of the BorderPane
 
